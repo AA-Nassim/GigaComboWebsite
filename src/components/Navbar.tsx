@@ -20,33 +20,40 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 
-    lg:px-16 px-4 py-4 
-    bg-white shadow-md
-    border-b-4 border-red-700
+    shadow-md
+    border-b-4 
     text-black">
-      
-      <div className="flex flex-wrap items-center">
-        <div className="flex-1 flex justify-between items-center">
-          <a href="#" className="text-xl font-black">BrrBrrPatapim</a>
+      <div className="lg:px-16 px-4 py-4  bg-white relative">
+        <div className="flex flex-wrap items-center bg-white"> 
+          <div className="flex-1 flex justify-between items-center">
+            <a href="#" className="text-xl font-black">BrrBrrPatapim</a>
+          </div>
+
+          <button onClick={toggleMenu} className='text-neutral-400 hover:text-white focus:outline-none md:hidden flex' aria-label='Toggle Menu'>
+            <img src={isOpen ? "/close.svg" : "/menu.svg"} alt='toggle' className=' invert w-8 h-8'/>
+          </button>
+
+          <div className="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+            <nav>
+              <NavbarItems />
+            </nav>
+          </div>
         </div>
 
-        <button onClick={toggleMenu} className='text-neutral-400 hover:text-white focus:outline-none sm:hidden flex' aria-label='Toggle Menu'>
-          <img src={isOpen ? "/close.svg" : "/menu.svg"} alt='toggle' className='w-6 h-6'/>
-        </button>
-
-        <div className="hidden md:flex md:items-center md:w-auto w-full" id="menu">
-          <nav>
+        <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-screen" : "max-h-0"}`}>
+          <nav className='p-5'>
             <NavbarItems />
           </nav>
         </div>
+        
       </div>
 
-      <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-screen" : "max-h-0"}`}>
-        <nav className='p-5'>
-          <NavbarItems />
-        </nav>
-      </div>
       
+      <div className="relative left-0 bottom-0 w-full h-[32px] bg-transparent z-10">
+        <svg className="w-full h-full block fill-red-700" viewBox="0 0 100 10" preserveAspectRatio="none">
+          <polygon points="0,0 100,0 100,8 0,2" />
+        </svg>
+      </div>
     </header>
   )
 }

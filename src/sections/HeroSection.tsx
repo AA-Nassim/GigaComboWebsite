@@ -1,0 +1,27 @@
+// Version full screen video background
+// const HeroSection = () => {
+//   return (
+//     <section className="relative h-screen w-screen flex flex-col items-center justify-center text-center text-white ">
+//       <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+//         <video className="min-w-full min-h-full absolute object-cover"
+//         src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" 
+//         typeof="video/mp4" autoPlay muted loop />
+//       </div>
+
+//       <div className="video-content space-y-2 z-10">
+//         <h1 className="font-light text-6xl">full Hero Video</h1>
+//         <h3 className="font-light text-3xl">with TailwindCSS</h3>
+//       </div>
+//     </section>
+//   )
+// }
+
+const HeroSection = () => {
+  return (
+    <section className="h-screen w-full pt-[10%] bg-black text-white">
+      jaj jouj
+    </section>
+  )
+}
+
+export default HeroSection
