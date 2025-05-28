@@ -20,8 +20,6 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 
-    shadow-md
-    border-b-4 
     text-black">
       <div className="lg:px-16 px-4 py-4  bg-white relative">
         <div className="flex flex-wrap items-center bg-white"> 
