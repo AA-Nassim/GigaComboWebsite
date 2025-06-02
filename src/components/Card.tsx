@@ -5,7 +5,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({cardTitle, cardDescription}) => {
   return (
-    <div className="w-full sm:w-1/2">
+    <div className="w-full md:w-1/2 hover:scale-90 transition duration-300 ease-in-out">
         <div className="relative h-full">
             <span className="absolute top-0 left-0 
             w-full h-full 

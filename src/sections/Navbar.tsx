@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 
     text-black">
-      <div className="lg:px-16 px-4 py-4  bg-white relative">
+      <div className="px-16 md:px-16 py-4  bg-white relative">
         <div className="flex flex-wrap items-center bg-white"> 
           <div className="flex-1 flex justify-between items-center">
             <a href="#" className="text-xl font-black">BrrBrrPatapim</a>

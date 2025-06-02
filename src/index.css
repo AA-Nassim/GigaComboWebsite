@@ -8,7 +8,16 @@
 
 body {
   font-family: 'General Sans', sans-serif;
+} 
+
+a:focus{
+  @apply text-red-700 font-bold transition-all duration-200 ease-in-out outline-none;
 }
+button:focus{
+  outline:none;
+}
+
+
 
 .video-docker video {
   top: 50%;
@@ -25,4 +34,13 @@ body {
   left: 0;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
+}
+
+.section-title {
+  @apply w-full text-7xl font-black uppercase; 
+}
+
+
+.section-container {
+  @apply w-full flex flex-col gap-16 items-center justify-between px-16 md:px-32 xl:px-64 py-16
 }

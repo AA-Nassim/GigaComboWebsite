@@ -81,3 +81,14 @@ export const servicesText:ServicesText = {
     buttonText: 'Contact Us',
     buttonLink: '#'
 } as const;
+
+export interface ContactText {
+    title: string; 
+    description: string; 
+    buttonText: string; 
+}
+export const contactText:ContactText = {
+    title: 'Contact Us',
+    description: 'If you have any questions or inquiries, please feel free to reach out to us. We are here to help you with your project and provide you with the best solutions.',
+    buttonText: 'Send Message'
+} as const;

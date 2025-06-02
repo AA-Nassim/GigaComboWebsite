@@ -1,9 +1,18 @@
-import { ReactLenis } from 'lenis/react'
 import './App.css'
-import Navbar from './components/Navbar'
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+import { ReactLenis } from 'lenis/react'
+
+import Navbar from './sections/Navbar'
 import HeroSection from './sections/HeroSection'
 import AboutSection from './sections/AboutSection'
 import ServicesSection from './sections/ServicesSection'
+import WorkSection from './sections/WorkSection'
+import ContactSection from './sections/ContactSection';
+import Footer from './sections/Footer';
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
 
@@ -18,10 +27,12 @@ function App() {
       <AboutSection />
 
       <ServicesSection />
-      
-      <div className='h-[200vh] bg-white'>
 
-      </div>
+      <WorkSection />
+      
+      <ContactSection />
+
+      <Footer />
     </>
   )
 }
