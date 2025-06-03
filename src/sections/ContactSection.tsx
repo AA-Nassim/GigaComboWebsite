@@ -32,7 +32,7 @@ const ContactSection = () => {
                     <form action="#" method="POST" onSubmit={handleSubmit}>
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>
-                                <label htmlFor="first-name" className="block text-sm/6 font-semibold text-gray-900">
+                                <label htmlFor="first-name" aria-required className="block text-sm/6 font-semibold text-gray-900">
                                     First name
                                 </label>
                                 

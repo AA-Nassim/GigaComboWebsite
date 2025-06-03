@@ -11,8 +11,13 @@ body {
 } 
 
 a:focus{
-  @apply text-red-700 font-bold transition-all duration-200 ease-in-out outline-none;
+  @apply text-red-700 transition-colors duration-300 ease-in-out outline-none;
 }
+
+a:hover {
+  @apply text-red-700 transition-all duration-300 ease-in-out;
+}
+
 button:focus{
   outline:none;
 }

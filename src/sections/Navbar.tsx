@@ -5,7 +5,7 @@ export const NavbarItems = () => {
   return (
     <ul className="md:flex items-center justify-between text-base font-bold text-black pt-4 md:pt-0">
       {menuItems.map((menuItem:MenuItem) => (
-        <li key={menuItem.href} className="hover:text-red-700  transition duration-300 ease-in-out">
+        <li key={menuItem.href} >
           <a className="md:p-4 py-3 px-0 block " href={menuItem.href}>{menuItem.title}</a>
         </li>
       ))}

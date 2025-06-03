@@ -26,6 +26,7 @@ export const menuItems:MenuItem[] = [
     }
  ] as const; 
 
+
  export interface AboutText {
     title: string; 
     description: string;
@@ -82,6 +83,50 @@ export const servicesText:ServicesText = {
     buttonLink: '#'
 } as const;
 
+
+export interface WorkCardText {
+    img: string;
+    title: string; 
+    description: string; 
+    link: string;
+}
+export interface WorkText {
+    title: string; 
+    description: string;
+    cards: WorkCardText[];
+}
+export const workText:WorkText = {
+    title: 'Our Work',
+    description: 'Here is a few of the awesome projects we have worked on. We are proud of our work and we hope you will be too.',
+    cards: [
+        {
+            img: 'https://picsum.photos/1080',
+            title: 'Project 1',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            link: '#'
+        },
+        {
+            img: 'https://picsum.photos/1080',
+            title: 'Project 2',
+            description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            link: '#'
+        },
+        {
+            img: 'https://picsum.photos/1080',
+            title: 'Project 3',
+            description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+            link: '#'
+        },
+        {
+            img: 'https://picsum.photos/1080',
+            title: 'Project 4',
+            description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            link: '#'
+        }
+    ]
+} as const;
+
+
 export interface ContactText {
     title: string; 
     description: string; 
@@ -92,3 +137,5 @@ export const contactText:ContactText = {
     description: 'If you have any questions or inquiries, please feel free to reach out to us. We are here to help you with your project and provide you with the best solutions.',
     buttonText: 'Send Message'
 } as const;
+
+
