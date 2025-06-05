@@ -1,12 +1,8 @@
 const Footer = () => {
     return (
-        <footer className="relative border-t border-neutral-700/20 py-10 px-6 bg-amber-400">
+        <footer className="relative py-10 px-6 bg-amber-400">
         
-        <div className="absolute top-0 left-0 w-full h-[128px] bg-transparent -mb-1 z-10">
-            <svg className="w-full h-full block fill-white" viewBox="0 0 100 100" preserveAspectRatio="none">
-              <polygon points="0,0 100,90 100,100 0,100" />
-            </svg>
-        </div>
+        
         
         <div className="mx-auto max-w-7xl">
             <div className="flex flex-wrap items-center justify-between gap-10 md:items-start lg:flex-nowrap">

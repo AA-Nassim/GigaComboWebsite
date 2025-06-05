@@ -4,7 +4,7 @@ import { servicesText } from "../static/TextContentFR"
 
 const ServicesSection = () => {
   return (
-    <section className="section-container bg-white">
+    <section className="section-container bg-red-600 text-white">
 
         <h1 className="section-title">
             {servicesText.title}
@@ -33,7 +33,7 @@ const ServicesSection = () => {
             <p className="w-full text-lg">
                 {servicesText.contactText}
             </p>
-            <Button buttonText={servicesText.buttonText} buttonLink={servicesText.buttonLink} />
+            <Button buttonText={servicesText.buttonText} buttonColor="yellow" buttonLink={servicesText.buttonLink} />
         </div>
         
     </section>
