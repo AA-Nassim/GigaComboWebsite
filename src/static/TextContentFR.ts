@@ -138,4 +138,45 @@ export const contactText:ContactText = {
     buttonText: 'Send Message'
 } as const;
 
+export interface FooterCategory {
+    title: string; 
+    texts: string[];
+    links: string[];
+    logos?: string[]; 
+}
+export interface FooterText {
+    img: string; 
+    description: string; 
+    categories: FooterCategory[]; 
+    rights: string; 
+}
+export const footerText:FooterText = {
+    img: 'linkToSVG', 
+    description: 'Welcome to YourService.io, where innovation meets reliability. Our mission is to empower developers and businesses with cutting-edge tools and services to seamlessly build, deploy, and scale robust applications. At YourService.io, we prioritize performance, scalability, and security, ensuring that your full-stack applications meet the highest standards.', 
+    categories: [
+        {
+            title: 'PAGES', 
+            texts: ['Features', 'Pricing', 'FAQ'], 
+            links: ['#Features', '#Pricing', '#FAQ']
+        }, 
+        {
+            title: 'SUPPORT', 
+            texts: ['Request Feedback', 'Submit Bugs', 'Contact Us'], 
+            links: ['#Request Feedback', '#Submit Bugs', '#Contact Us']
+        }, 
+        {
+            title: 'LEGAL', 
+            texts: ['Privacy Policy'], 
+            links: ['#PrivacyPolicy'], 
+        }, 
+        {
+            title: 'CONTACT', 
+            texts: ['hello@email.chokbar'], 
+            links: ['Twitter'],
+            logos: ['./Link1', './LinkZ'] 
 
+        }
+    ], 
+    rights: '© 2024 YourService.io All rights reserved.',
+
+} as const; 

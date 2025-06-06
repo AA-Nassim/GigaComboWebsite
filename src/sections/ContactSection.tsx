@@ -7,15 +7,16 @@ const ContactSection = () => {
         console.log("Form submitted");
     };
 
-    const inputStyle = `block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 
+    const inputStyle = `block w-full rounded-sm bg-white px-3.5 py-2 
+    text-base text-gray-900  
     placeholder:text-gray-400 
-    focus:outline-2 focus:-outline-offset-2 focus:outline-amber-400 
-    invalid:border-red-500 invalid:text-red-600 
-    focus:invalid:border-red-500 focus:invalid:outline-red-500 
+    focus:outline-3  focus:outline-amber-950 
+    invalid:outline-3 invalid:outline-red-600 invalid:text-red-600 
+    focus:invalid:outline-4 focus:invalid:outline-red-600 
     transition ease-in-out duration-200`;
 
     return (
-        <section className="section-container bg-white">
+        <section className="section-container bg-amber-400">
             <div className=" w-full h-full flex flex-col lg:flex-row gap-15">
                 <div className="flex-1/3 flex flex-col gap-15 items-center ">
                     <h1 className="section-title">
@@ -35,8 +36,11 @@ const ContactSection = () => {
                                 <label htmlFor="first-name" aria-required className="block text-sm/6 font-semibold text-gray-900">
                                     First name
                                 </label>
+
                                 
+
                                 <div className="mt-2.5">
+                                    
                                     <input type="text" name="first-name" id="first-name" autoComplete="given-name" placeholder="Binted"
                                     className={inputStyle} />
                                 </div>

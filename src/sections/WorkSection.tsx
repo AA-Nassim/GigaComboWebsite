@@ -9,7 +9,7 @@ const WorkSection = () => {
         <h1 className="section-title"> 
           {workText.title} 
         </h1>
-        <p>
+        <p className="section-description">
           {workText.description}
         </p>
         <div className=" w-full flex flex-col md:flex-row gap-5 md:gap-16 lg:gap-32">

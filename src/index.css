@@ -45,6 +45,10 @@ button:focus{
   @apply w-full text-7xl font-black uppercase; 
 }
 
+.section-description {
+  @apply w-full text-black;
+}
+
 
 .section-container {
   @apply w-full flex flex-col gap-16 items-center justify-between px-16 md:px-32 xl:px-64 py-16

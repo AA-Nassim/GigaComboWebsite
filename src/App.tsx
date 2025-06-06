@@ -40,12 +40,24 @@ function App() {
 
       <ServicesSection />
 
+      <div className="w-full h-[128px] bg-red-600 -mb-1 z-10">
+          <svg className="w-full h-full block fill-white" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="0,90 100,0 100,100 0,100" />
+          </svg>
+      </div>
+
       <WorkSection />
       
-      <ContactSection />
-
       <div className="w-full h-[128px] bg-white -mb-1 z-10">
             <svg className="w-full h-full block fill-amber-400" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon points="0,0 100,90 100,100 0,100" />
+            </svg>
+      </div>
+
+      <ContactSection />
+
+      <div className="w-full h-[128px] bg-amber-400 -mb-1 z-10">
+            <svg className="w-full h-full block fill-amber-600" viewBox="0 0 100 100" preserveAspectRatio="none">
               <polygon points="0,0 100,90 100,100 0,100" />
             </svg>
       </div>
