@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="px-16 md:px-16 py-4  bg-white relative">
         <div className="flex flex-wrap items-center bg-white"> 
           <div className="flex-1 flex justify-between items-center">
-            <a href="#" className="text-xl font-black">BrrBrrPatapim</a>
+            <a href="/" className="text-xl font-black">BrrBrrPatapim</a>
           </div>
 
           <button onClick={toggleMenu} className='text-neutral-400 hover:text-white focus:outline-none md:hidden flex' aria-label='Toggle Menu'>

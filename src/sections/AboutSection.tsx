@@ -14,7 +14,7 @@ const AboutSection = () => {
           {aboutText.description}
         </p>
 
-        <Button buttonText={aboutText.buttonText} buttonLink="#" />
+        <Button buttonText={aboutText.buttonText} buttonLink="about" />
     </section>
   )
 }

@@ -1,3 +1,5 @@
+// #region Text Navbar & Footer
+
 export interface MenuItem {
     title: string;
     description: string;
@@ -7,24 +9,71 @@ export const menuItems:MenuItem[] = [
     {
         title: 'About Us',
         description: 'Learn more about our company and our mission.',
-        href: '#about',
+        href: 'about',
     },
     {
         title: 'Our Services',
         description: 'Discover the services we offer to help you succeed.',
-        href: '#services',
+        href: 'services',
     },
     {
         title: 'Our Work',
         description: 'Explore our portfolio and see what we can do for you.',
-        href: '#work',
+        href: 'work',
     },
     {
         title: 'Contact Us',
         description: 'Get in touch with us for any inquiries or support.',
-        href: '#contact',
+        href: 'contact',
     }
  ] as const; 
+
+ export interface FooterCategory {
+    title: string; 
+    texts: string[];
+    links: string[];
+    logos?: string[]; 
+}
+export interface FooterText {
+    img: string; 
+    description: string; 
+    categories: FooterCategory[]; 
+    rights: string; 
+}
+export const footerText:FooterText = {
+    img: 'linkToSVG', 
+    description: 'Welcome to YourService.io, where innovation meets reliability. Our mission is to empower developers and businesses with cutting-edge tools and services to seamlessly build, deploy, and scale robust applications. At YourService.io, we prioritize performance, scalability, and security, ensuring that your full-stack applications meet the highest standards.', 
+    categories: [
+        {
+            title: 'PAGES', 
+            texts: ['Features', 'Pricing', 'FAQ'], 
+            links: ['#Features', '#Pricing', '#FAQ']
+        }, 
+        {
+            title: 'SUPPORT', 
+            texts: ['Request Feedback', 'Submit Bugs', 'Contact Us'], 
+            links: ['#Request Feedback', '#Submit Bugs', '#Contact Us']
+        }, 
+        {
+            title: 'LEGAL', 
+            texts: ['Privacy Policy'], 
+            links: ['#PrivacyPolicy'], 
+        }, 
+        {
+            title: 'CONTACT', 
+            texts: ['hello@email.chokbar'], 
+            links: ['Twitter'],
+            logos: ['./Link1', './LinkZ'] 
+
+        }
+    ], 
+    rights: '© 2024 YourService.io All rights reserved.',
+
+} as const; 
+
+// #endregion
+
+// #region Text Home Page
 
 
  export interface AboutText {
@@ -138,45 +187,47 @@ export const contactText:ContactText = {
     buttonText: 'Send Message'
 } as const;
 
-export interface FooterCategory {
+// #endregion 
+
+// #region Text About Page
+export interface AboutPageText {
     title: string; 
-    texts: string[];
-    links: string[];
-    logos?: string[]; 
-}
-export interface FooterText {
-    img: string; 
     description: string; 
-    categories: FooterCategory[]; 
-    rights: string; 
+
+    teamTitle: string;
+    teamDescription: string;
+    teamImgs: string[];
+    teamNames: string[];
+    
 }
-export const footerText:FooterText = {
-    img: 'linkToSVG', 
-    description: 'Welcome to YourService.io, where innovation meets reliability. Our mission is to empower developers and businesses with cutting-edge tools and services to seamlessly build, deploy, and scale robust applications. At YourService.io, we prioritize performance, scalability, and security, ensuring that your full-stack applications meet the highest standards.', 
-    categories: [
-        {
-            title: 'PAGES', 
-            texts: ['Features', 'Pricing', 'FAQ'], 
-            links: ['#Features', '#Pricing', '#FAQ']
-        }, 
-        {
-            title: 'SUPPORT', 
-            texts: ['Request Feedback', 'Submit Bugs', 'Contact Us'], 
-            links: ['#Request Feedback', '#Submit Bugs', '#Contact Us']
-        }, 
-        {
-            title: 'LEGAL', 
-            texts: ['Privacy Policy'], 
-            links: ['#PrivacyPolicy'], 
-        }, 
-        {
-            title: 'CONTACT', 
-            texts: ['hello@email.chokbar'], 
-            links: ['Twitter'],
-            logos: ['./Link1', './LinkZ'] 
+export const aboutPageText:AboutPageText = {
+    title: 'About Us',
+    description: 'We are a team of passionate professionals dedicated to delivering high-quality services and solutions to our clients. Our mission is to help businesses grow and succeed in the digital world by providing innovative and effective strategies tailored to their unique needs.',
+    
+    teamTitle: 'Meet Our Founder',
+    teamDescription: 'Our founder is a visionary leader with over 10 years of experience in the industry. They have a proven track record of success and are committed to driving innovation and excellence in everything we do.',
+    teamImgs: [
+        'https://picsum.photos/200/300',
+        'https://picsum.photos/200/300',
+        'https://picsum.photos/200/300'
+    ],
+    teamNames: [
+        'John Doe',
+        'Jane Smith',
+        'Alice Johnson'
+    ]
+} as const;
+// #endregion
 
-        }
-    ], 
-    rights: '© 2024 YourService.io All rights reserved.',
 
-} as const; 
+// #region Text projects
+export interface ProjectTextSection {
+    title: string; 
+    description: string; 
+    img: string; 
+}
+export interface ProjectText {
+    title: string; 
+    description: string;
+    sections: ProjectTextSection[];
+}
