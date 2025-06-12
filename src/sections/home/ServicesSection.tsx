@@ -1,6 +1,6 @@
-import Card from "../components/Card"
-import Button from "../components/Button"
-import { servicesText } from "../static/TextContentFR"
+import Card from "../../components/Card"
+import Button from "../../components/Button"
+import { servicesText } from "../../static/TextContentFR"
 
 const ServicesSection = () => {
   return (

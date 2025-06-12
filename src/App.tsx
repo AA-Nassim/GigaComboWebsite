@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router';
 
 import Navbar from './sections/Navbar'
 import Footer from './sections/Footer';
-import HomePage from './routes/homePage';
+import HomePage from './routes/HomePage';
 import AboutPage from './routes/AboutPage';
 
 

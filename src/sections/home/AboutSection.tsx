@@ -1,5 +1,5 @@
-import Button from "../components/Button"
-import { aboutText } from "../static/TextContentFR"
+import Button from "../../components/Button"
+import { aboutText } from "../../static/TextContentFR"
 
 const AboutSection = () => {
   return (

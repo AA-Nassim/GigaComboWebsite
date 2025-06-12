@@ -1,5 +1,5 @@
-import BlogCard from "../components/BlogCard"
-import { workText } from "../static/TextContentFR"
+import BlogCard from "../../components/BlogCard"
+import { workText } from "../../static/TextContentFR"
 
 const WorkSection = () => {
 

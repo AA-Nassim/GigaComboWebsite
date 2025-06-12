@@ -3,10 +3,10 @@ import { menuItems, type MenuItem } from "../static/TextContentFR";
 
 export const NavbarItems = () => {
   return (
-    <ul className="md:flex items-center justify-between text-base font-bold text-black pt-4 md:pt-0">
+    <ul className="md:flex gap-4 justify-between text-base font-bold text-black pt-4 md:pt-0">
       {menuItems.map((menuItem:MenuItem) => (
         <li key={menuItem.href} >
-          <a className="md:p-4 py-3 px-0 block " href={menuItem.href}>{menuItem.title}</a>
+          <a className="h-8 block content-center" href={menuItem.href}>{menuItem.title}</a>
         </li>
       ))}
     </ul>
@@ -21,10 +21,10 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 
     text-black">
-      <div className="px-16 md:px-16 py-4  bg-white relative">
+      <div className="px-6 md:px-12 xl:px-16 py-4  bg-white relative">
         <div className="flex flex-wrap items-center bg-white"> 
           <div className="flex-1 flex justify-between items-center">
-            <a href="/" className="text-xl font-black">BrrBrrPatapim</a>
+            <a href="/" className="md:text-xl text-l font-black">BrrBrrPatapim</a>
           </div>
 
           <button onClick={toggleMenu} className='text-neutral-400 hover:text-white focus:outline-none md:hidden flex' aria-label='Toggle Menu'>

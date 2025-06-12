@@ -1,5 +1,5 @@
-import Button from "../components/Button"
-import { contactText } from "../static/TextContentFR"
+import Button from "../../components/Button"
+import { contactText } from "../../static/TextContentFR"
 
 const ContactSection = () => {
     const handleSubmit = (e: React.FormEvent) => {

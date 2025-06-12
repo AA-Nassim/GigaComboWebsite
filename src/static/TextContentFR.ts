@@ -190,22 +190,24 @@ export const contactText:ContactText = {
 // #endregion 
 
 // #region Text About Page
-export interface AboutPageText {
+export interface AboutDetailsText {
     title: string; 
     description: string; 
+}
+export const aboutDetailsText:AboutDetailsText = {
+    title: 'About Us',
+    description: 'We are a team of passionate professionals dedicated to delivering high-quality services and solutions to our clients. Our mission is to help businesses grow and succeed in the digital world by providing innovative and effective strategies tailored to their unique needs.',
+} as const;
 
+export interface TeamText {
     teamTitle: string;
     teamDescription: string;
     teamImgs: string[];
     teamNames: string[];
-    
 }
-export const aboutPageText:AboutPageText = {
-    title: 'About Us',
-    description: 'We are a team of passionate professionals dedicated to delivering high-quality services and solutions to our clients. Our mission is to help businesses grow and succeed in the digital world by providing innovative and effective strategies tailored to their unique needs.',
-    
-    teamTitle: 'Meet Our Founder',
-    teamDescription: 'Our founder is a visionary leader with over 10 years of experience in the industry. They have a proven track record of success and are committed to driving innovation and excellence in everything we do.',
+export const teamText:TeamText = {
+    teamTitle: 'Meet Our Team',
+    teamDescription: 'Our team is composed of experienced professionals with diverse backgrounds and expertise. We are committed to delivering the best results for our clients and ensuring their success in every project we undertake.',
     teamImgs: [
         'https://picsum.photos/200/300',
         'https://picsum.photos/200/300',
@@ -231,3 +233,6 @@ export interface ProjectText {
     description: string;
     sections: ProjectTextSection[];
 }
+
+
+// #endregion
