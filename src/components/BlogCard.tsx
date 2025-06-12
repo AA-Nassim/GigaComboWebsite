@@ -5,7 +5,7 @@ interface BlogCardProps {
     link: string;
 }
 
-const BlogCard : React.FC<BlogCardProps> = ({title, description, img, link}) => {
+const BlogCard : React.FC<BlogCardProps> = ({title, description, img}) => {
   return (
     <div className="flex flex-col gap-5 
     bg-white rounded-lg p-4">

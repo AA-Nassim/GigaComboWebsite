@@ -1,6 +1,6 @@
 import { footerText, type FooterCategory } from "../static/TextContentFR"
 
-const FooterCategory: React.FC<FooterCategory> = ({title, texts, links, logos}) => {
+const FooterCategory: React.FC<FooterCategory> = ({title, texts, links}) => {
     return (
         <div>
             <h3 className="font-bold uppercase text-white">{title}</h3>
