@@ -1,10 +1,10 @@
-import Card from "../../components/Card"
-import Button from "../../components/Button"
-import { servicesText } from "../../static/TextContentFR"
+import Card from "../components/Card"
+import Button from "../components/Button"
+import { servicesText } from "../static/TextContentFR"
 
 const ServicesSection = () => {
   return (
-    <section className="section-container bg-red-600 text-white">
+    <section id="services" className="section-container bg-red-600 text-white">
 
         <h1 className="section-title">
             {servicesText.title}

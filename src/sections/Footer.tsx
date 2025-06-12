@@ -6,7 +6,7 @@ const FooterCategory: React.FC<FooterCategory> = ({title, texts, links, logos}) 
             <h3 className="font-bold uppercase text-white">{title}</h3>
             <ul className="mt-4 space-y-2 text-white">
                 {texts.map((text:string, id:number) => (
-                    <li id={text}>
+                    <li key={text}>
                         <a href={links[id]} className="text-white">
                             {text}
                         </a>
@@ -21,7 +21,9 @@ const FooterCategories = () => {
     return (
         <div className="grid grid-cols-1 gap-4 text-sm sm:grid-cols-3 sm:gap-10 md:grid-cols-4">
             {footerText.categories.map((category: FooterCategory) => (
+                <div key={category.title}>
                 <FooterCategory title={category.title} texts={category.texts} links={category.links} logos={category.logos}/>
+                </div>
             ))}
         </div>
     )

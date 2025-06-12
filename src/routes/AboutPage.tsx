@@ -1,5 +1,5 @@
-import AboutDetailedSection from "../sections/about/AboutDetailedSection"
-import TeamSection from "../sections/about/TeamSection"
+import AboutDetailedSection from "../sections/AboutDetailedSection"
+import TeamSection from "../sections/TeamSection"
 
 const AboutPage = () => {
   return (

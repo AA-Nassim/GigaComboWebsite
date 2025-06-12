@@ -1,9 +1,9 @@
-import Button from "../../components/Button"
-import { aboutText } from "../../static/TextContentFR"
+import Button from "../components/Button"
+import { aboutText } from "../static/TextContentFR"
 
 const AboutSection = () => {
   return (
-    <section className="section-container bg-white">
+    <section id="about" className="section-container bg-white">
         
 
         <h1 className="section-title">

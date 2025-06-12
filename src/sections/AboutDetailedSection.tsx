@@ -1,4 +1,4 @@
-import { aboutDetailsText } from "../../static/TextContentFR"
+import { aboutDetailsText } from "../static/TextContentFR"
 
 const AboutDetailedSection = () => {
   return (

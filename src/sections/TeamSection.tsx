@@ -1,5 +1,5 @@
-import ProfileCard from "../../components/ProfileCard"
-import { teamText } from "../../static/TextContentFR"
+import ProfileCard from "../components/ProfileCard"
+import { teamText } from "../static/TextContentFR"
 
 const TeamSection = () => {
   return (

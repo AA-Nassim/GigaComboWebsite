@@ -9,22 +9,22 @@ export const menuItems:MenuItem[] = [
     {
         title: 'About Us',
         description: 'Learn more about our company and our mission.',
-        href: 'about',
+        href: '/#about',
     },
     {
         title: 'Our Services',
         description: 'Discover the services we offer to help you succeed.',
-        href: 'services',
+        href: '/#services',
     },
     {
         title: 'Our Work',
         description: 'Explore our portfolio and see what we can do for you.',
-        href: 'work',
+        href: '/#work',
     },
     {
         title: 'Contact Us',
         description: 'Get in touch with us for any inquiries or support.',
-        href: 'contact',
+        href: '/#contact',
     }
  ] as const; 
 
@@ -129,7 +129,7 @@ export const servicesText:ServicesText = {
     ],
     contactText: 'If you are interested in any of these services, please contact us via the contact form below. We will be happy to discuss your project and provide you with a quote.',
     buttonText: 'Contact Us',
-    buttonLink: '#'
+    buttonLink: '/#contact'
 } as const;
 
 

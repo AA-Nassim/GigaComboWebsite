@@ -1,11 +1,11 @@
-import BlogCard from "../../components/BlogCard"
-import { workText } from "../../static/TextContentFR"
+import BlogCard from "../components/BlogCard"
+import { workText } from "../static/TextContentFR"
 
 const WorkSection = () => {
 
 
   return (
-    <section className="section-container bg-white text-black">
+    <section id="work" className="section-container bg-white text-black">
         <h1 className="section-title"> 
           {workText.title} 
         </h1>

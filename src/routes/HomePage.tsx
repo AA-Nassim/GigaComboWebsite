@@ -1,8 +1,8 @@
-import HeroSection from '../sections/home/HeroSection'
-import AboutSection from '../sections/home/AboutSection'
-import ServicesSection from '../sections/home/ServicesSection'
-import WorkSection from '../sections/home/WorkSection'
-import ContactSection from '../sections/home/ContactSection';
+import HeroSection from '../sections/HeroSection'
+import AboutSection from '../sections/AboutSection'
+import ServicesSection from '../sections/ServicesSection'
+import WorkSection from '../sections/WorkSection'
+import ContactSection from '../sections/ContactSection';
 
 const HomePage = () => {
   return (
